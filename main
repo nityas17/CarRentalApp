@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.io.IOException;
+
+public class mainclass
+{
+    public static void main()
+    {
+        distance distanceobj= new distance();
+        distanceobj.getdestination();
+        distanceobj.getdistance();
+        vehicle vehicleobj=new vehicle();
+        vehicleobj.getvehicle();
+
+
+
+    }
+}
