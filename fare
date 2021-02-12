@@ -1,0 +1,68 @@
+public class fare
+{
+    public String vehicletype,acorno, fueltype;
+    public double fare;
+    boolean petrol =fueltype.equalsIgnoreCase("PETROL");
+    boolean vehiclecar =vehicletype.equalsIgnoreCase("CAR");
+    boolean ac =acorno.equalsIgnoreCase("AC");
+    boolean vehiclesuv = vehicletype.equalsIgnoreCase("SUV");
+    boolean vehiclevan=vehicletype.equalsIgnoreCase("VAN");
+    boolean vehiclebus=vehicletype.equalsIgnoreCase("VAN");
+
+    //calculating fare
+	if(vehiclecar==true)
+    {
+        if(petrol==true)
+        {
+            if(ac==true)
+            {
+                fare=17*distance;
+            }
+            else
+            {
+                fare=15*distance;
+            }
+        }
+        else
+        {
+            if(ac==true)
+            {
+                fare=16*distance;
+            }
+            else
+            {
+                fare=15*distance;
+            }
+        }
+
+    }
+	if(vehiclesuv==true)
+    {
+        fare=16*distance;
+    }
+	if(vehiclevan==true)
+    {
+        if(ac==true)
+        {
+            fare=16*distance;
+        }
+        else
+        {
+            fare=15*distance;
+        }
+
+    }
+	if(vehiclebus==true)
+    {
+        if(ac==true)
+        {
+            fare= 12.8*distance;
+        }
+        else
+        {
+            fare=12*distance;
+        }
+
+    }
+	System.out.println(fare);
+}
