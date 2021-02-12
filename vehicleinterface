@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public interface vehicle implements fare
+{
+        public static void getvehicle()
+        {
+            String vehicletype, acorno, fueltype;
+            Scanner input = new Scanner(System.in);
+            System.out.println("enter the type of vehicle");
+            String vehicletype = input.hasNextLine();
+            System.out.println("enter if AC or non-AC");
+            String acorno = input.hasNextLine();
+            System.out.println("enter the feul type");
+            String feultype = input.hasNextLine();
+
+        }
+}
