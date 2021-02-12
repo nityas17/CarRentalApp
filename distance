@@ -1,0 +1,55 @@
+public class distance extends fare
+{
+    //calculating distance
+    String dcity,rt;
+    double distance,d;
+    public void getdestination()
+    {
+        Scanner input1=new Scanner(System.in);
+        System.out.println("Round trip or not, enter yes or no");
+        rt =input1.newline();
+        System.out.println("Enter the destination city, in case of round trip enter middle city");
+        dcity=input1.newline();
+    }
+
+    public void getdistance()
+    {
+        //pune to mumbai
+        boolean mumbai= dcity.equalsIgnoreCase("MUMBAI");
+        if(mumbai==true)
+        {
+            d=200;
+        }
+        //pune to bangalore
+        boolean bangalore=dcity.equalsIgnoreCase("BANGALORE");
+        if(bangalore==true)
+        {
+            d=1000;
+        }
+
+        //pune to delhi
+        boolean delhi=dcity.equalsIgnoreCase("DELHI");
+        if(delhi==true)
+        {
+            d=2050;
+        }
+
+        //pune to chennai
+        boolean chennai=dcity.equalsIgnoreCase("CHENNAI");
+        if(chennai==true)
+        {
+            d=1234.5;
+        }
+
+        boolean roundtrip=rt.equalsIgnoreCase("YES");
+        if(rountrip==true)
+        {
+            distance=d+d;
+        }
+        else
+        {
+            distance=d;
+        }
+
+    }
+}
